@@ -1,13 +1,15 @@
-version: '3.9'
+version: '1.0.0'
 
 services:
   api:
     container_name: reunion-social-media-api
-    build: ./
+    build:
+      context: ./api
+      dockerfile: Dockerfile
     ports:
       - 3000:8000
     depends_on:
       - "database"
     env_file: '.env'
     restart: always
-    command: sh -c "npm run db-migrate && npm run start"
+    command: mocha --serial test/appTest.js

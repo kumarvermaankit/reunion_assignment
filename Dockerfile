@@ -13,9 +13,7 @@ EXPOSE 8000
 CMD ["npm", "start"]
 
 
-# Path: docker-compose.yml
 
-version: '3.7'
 
 
   
