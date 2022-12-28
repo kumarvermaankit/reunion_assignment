@@ -1,0 +1,8 @@
+
+const keys = {
+    MONGODB_URI: "mongodb+srv://dbmap:klN1cRGjjH9FHR2N@cluster0.g43ab.mongodb.net/assignmentdb?retryWrites=true&w=majority",
+    SECRET : "Thisismysecret",
+    TOKEN_LIFE : "2000m"
+}
+
+module.exports = keys;
